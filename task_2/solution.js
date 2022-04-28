@@ -6,9 +6,18 @@ function calcShipping(sum, min, shipping) {
     // Задание №2.1. Рассчитать доставку
 
     // создайте переменную shippingSum
+    let sippingSum;
 
     // если productsSum равно 0,
     // то shippingSum присвоить значение 0
+    if (productSum=0){
+        sippingSum=0;
+    }else if(productSum>=freeSippingMinSum){
+        sippingSum=0;
+    }else if(0<productSum<freeSippingMinSum){
+        sippingSum=sippingPrice;
+    }
+        
 
     // если productsSum Больше или равна freeShippingMinSum,
     // то shippingSum присвоить значение 0
