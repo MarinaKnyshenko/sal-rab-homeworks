@@ -10,11 +10,9 @@ function calcShipping(sum, min, shipping) {
 
     // если productsSum равно 0,
     // то shippingSum присвоить значение 0
-    if(productsSum=0){
-        sippingSum=0;
-    }else if(productsSum>=freeShippingMinSum){
-        sippingSum=0;
-    }else if(0<productsSum<freeShippingMinSum){
+    if (productsSum == 0 || productsSum >= freeShippingMinSum) {
+        shippingSum = 0;
+    }else{
         sippingSum=shippingPrice;
     }
         
@@ -27,7 +25,7 @@ function calcShipping(sum, min, shipping) {
 
     // Конец решения задания №2.1.
 
-    return shippingPrice;
+    return shippingSum;
 }
 
 function calcDiscount(sum, min, discount) {
