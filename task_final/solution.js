@@ -34,7 +34,7 @@
 // }
 
 function sendRequest(data) {
-    let data = {goods: [], order: {"address":"", "sum":""}, client: "" };
+    let data = {client: {name, phone},order: {address, sum}, goods: []};
 
     let countOfGoods = goods.length;
 
